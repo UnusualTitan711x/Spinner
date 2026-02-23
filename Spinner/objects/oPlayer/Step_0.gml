@@ -6,16 +6,8 @@ var left = keyboard_check(ord("A"))
 var right = keyboard_check(ord("D"))
 var jump = keyboard_check(vk_space)
 
+
 enum pState {normal, swing}
-
-var state = pState.normal
-
-y_speed += p_gravity
-
-x_speed = 0
-
-jump_height = 10
-mov_speed = 13
 
 
 switch (state)
@@ -24,6 +16,12 @@ switch (state)
 	{
 		// Movement
 		
+		y_speed += p_gravity
+
+		x_speed = 0
+
+		jump_height = 10
+		mov_speed = 13
 		if left
 		{
 		     x_speed = -1 * mov_speed
@@ -45,6 +43,7 @@ switch (state)
 
 		}
 		
+		move_and_collide(x_speed, y_speed, oBlock)
 		
 		if mouse_check_button(mb_left)
 		{
@@ -81,9 +80,6 @@ switch (state)
 		
 	}break
 }
-
-
-move_and_collide(x_speed, y_speed, oBlock)
 
 // Collision with Lava
 
