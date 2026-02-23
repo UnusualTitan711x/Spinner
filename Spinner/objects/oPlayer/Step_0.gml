@@ -1,12 +1,13 @@
-// Hello here
-// What is supposed to be here?
-
 var p_gravity = 0.3
 var left = keyboard_check(ord("A"))
 var right = keyboard_check(ord("D"))
+var up = keyboard_check(ord("W"))
+var down = keyboard_check(ord("S"))
+
 var jump = keyboard_check(vk_space)
 
 var x_input = right - left
+var y_input = up - down
 
 
 enum pState {normal, swing}
@@ -53,6 +54,10 @@ switch (state)
 	case pState.swing:
 	{
 		var ropeAngleAcceleration = -0.2 * dcos(ropeAngle)
+		ropeAngleAcceleration += x_input * 0.08
+		ropeLength += y_input * 2
+		ropeLength = max(ropeLength, 5)
+		
 		ropeAngleVelocity += ropeAngleAcceleration
 		ropeAngle += ropeAngleVelocity
 		ropeAngleVelocity *= 0.99 // Damping on the motion
