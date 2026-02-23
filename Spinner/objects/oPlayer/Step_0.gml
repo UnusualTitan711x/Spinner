@@ -1,19 +1,24 @@
 // Hello here
 // What is supposed to be here?
 
-y_speed += 0.1
+var p_gravity = 0.2
+var left = keyboard_check(ord("A"))
+var right = keyboard_check(ord("D"))
+var jump = keyboard_check(vk_space)
+
+y_speed += p_gravity
 
 x_speed = 0
 
-jump_height = 5
-mov_speed = 5
+jump_height = 10
+mov_speed = 10
 
-if keyboard_check(ord("A"))
+if left
 {
      x_speed = -1 * mov_speed
 }
 
-if keyboard_check(ord("D"))
+if right
 {
      x_speed = 1 * mov_speed
 }
@@ -21,7 +26,7 @@ if keyboard_check(ord("D"))
 if place_meeting(x, y+1, oBlock)
 {
     y_speed = 0
-    if keyboard_check(vk_space)
+    if jump
     {
          y_speed -= jump_height
     }
@@ -29,3 +34,10 @@ if place_meeting(x, y+1, oBlock)
 }
 
 move_and_collide(x_speed, y_speed, oBlock)
+
+// Collision with Lava
+
+if place_meeting(x, y, oLava)
+{
+    room_restart()
+}
