@@ -91,7 +91,7 @@ if place_meeting(x + x_speed, y, oBlock)
 	if state = pState.swing
 	{
 		ropeAngle = point_direction(grappleX, grappleY, x, y)
-		ropeAngleVelocity = -ropeAngleVelocity
+		ropeAngleVelocity = lerp(ropeAngleVelocity, 0, 0.1)
 	}
 }
 else
@@ -116,7 +116,7 @@ if place_meeting(x, y + y_speed, oBlock)
 	if state = pState.swing
 	{
 		ropeAngle = point_direction(grappleX, grappleY, x, y)
-		ropeAngleVelocity = 0
+		ropeAngleVelocity = lerp(ropeAngleVelocity, 0, 0.1)
 	}
 }
 else
@@ -129,3 +129,6 @@ if place_meeting(x, y, oLava)
 {
     room_restart()
 }
+
+
+
