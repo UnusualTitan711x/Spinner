@@ -7,7 +7,7 @@ color_count = 0
 
 for (i = 0; i < array_length(color_order); i+=1)
 {
-	show_debug_message(color_order[i])
+	show_message(color_order[i])
 }
 
 show_debug_message(color_order[2])

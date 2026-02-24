@@ -145,9 +145,15 @@ if block != noone
 	show_debug_message(array_length(collected_colors))
 	
 	// restart game if you went out of order
+	if collected_colors[color_count - 1] != color_order[color_count -1]
+		room_restart()
 }
 
-if array_length(collected_colors) >= 4 collected_colors = []
+if array_length(collected_colors) >= 4
+{
+	collected_colors = []
+	color_count = 0
+}
 
 
 
