@@ -23,6 +23,7 @@
   "name":"Spinner",
   "resources":[
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
+    {"id":{"name":"oBlockParent","path":"objects/oBlockParent/oBlockParent.yy",},},
     {"id":{"name":"oBLUE","path":"objects/oBLUE/oBLUE.yy",},},
     {"id":{"name":"oGREEN","path":"objects/oGREEN/oGREEN.yy",},},
     {"id":{"name":"oLava","path":"objects/oLava/oLava.yy",},},

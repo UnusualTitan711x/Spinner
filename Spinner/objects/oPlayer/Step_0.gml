@@ -91,7 +91,7 @@ if place_meeting(x + x_speed, y, oBlock)
 	if state = pState.swing
 	{
 		ropeAngle = point_direction(grappleX, grappleY, x, y)
-		ropeAngleVelocity = lerp(ropeAngleVelocity, 0, 0.1)
+		ropeAngleVelocity = lerp(ropeAngleVelocity, 0, 0.5)
 	}
 }
 else
@@ -116,7 +116,7 @@ if place_meeting(x, y + y_speed, oBlock)
 	if state = pState.swing
 	{
 		ropeAngle = point_direction(grappleX, grappleY, x, y)
-		ropeAngleVelocity = lerp(ropeAngleVelocity, 0, 0.1)
+		ropeAngleVelocity = lerp(ropeAngleVelocity, 0, 0.5)
 	}
 }
 else
@@ -129,6 +129,27 @@ if place_meeting(x, y, oLava)
 {
     room_restart()
 }
+
+// Touching colored blocks
+var block = instance_place(x, y, oBlockParent)
+
+if block != noone
+{
+	show_debug_message("this is " + block.color)
+
+	array_push(collected_colors, block.color)
+	color_count += 1
+	
+	instance_destroy(block)
+	
+	show_debug_message(array_length(collected_colors))
+	
+	// restart game if you went out of order
+}
+
+if array_length(collected_colors) >= 4 collected_colors = []
+
+
 
 
 

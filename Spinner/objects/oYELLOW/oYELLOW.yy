@@ -4,12 +4,17 @@
   "eventList":[],
   "managed":true,
   "name":"oYELLOW",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBlockParent","path":"objects/oBlockParent/oBlockParent.yy",},"propertyId":{"name":"color","path":"objects/oBlockParent/oBlockParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"yellow",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBlockParent",
+    "path":"objects/oBlockParent/oBlockParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

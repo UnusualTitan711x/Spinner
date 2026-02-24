@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oRED",
+  "%Name":"oBlockParent",
   "eventList":[],
   "managed":true,
-  "name":"oRED",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oBlockParent","path":"objects/oBlockParent/oBlockParent.yy",},"propertyId":{"name":"color","path":"objects/oBlockParent/oBlockParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"red",},
-  ],
+  "name":"oBlockParent",
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"oBlockParent",
-    "path":"objects/oBlockParent/oBlockParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,14 +23,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"color","filters":[],"listItems":[],"multiselect":false,"name":"color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sRedBlock",
-    "path":"sprites/sRedBlock/sRedBlock.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
