@@ -27,9 +27,11 @@
     {"id":{"name":"oBLUE","path":"objects/oBLUE/oBLUE.yy",},},
     {"id":{"name":"oGREEN","path":"objects/oGREEN/oGREEN.yy",},},
     {"id":{"name":"oLava","path":"objects/oLava/oLava.yy",},},
+    {"id":{"name":"oLevelManager","path":"objects/oLevelManager/oLevelManager.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oRED","path":"objects/oRED/oRED.yy",},},
     {"id":{"name":"oYELLOW","path":"objects/oYELLOW/oYELLOW.yy",},},
+    {"id":{"name":"EndRoom","path":"rooms/EndRoom/EndRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},},
@@ -44,6 +46,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"EndRoom","path":"rooms/EndRoom/EndRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
