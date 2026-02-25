@@ -1,5 +1,6 @@
 if state == pState.swing
 {
+	draw_set_colour(c_white)
 	draw_line_width(grappleX, grappleY, ropeX, ropeY, 2)
 }
 

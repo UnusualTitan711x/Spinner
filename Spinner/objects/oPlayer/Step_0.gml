@@ -139,6 +139,7 @@ if block != noone
 
 	array_push(collected_colors, block.color)
 	color_count += 1
+	blocks_cleared += 1
 	
 	instance_destroy(block)
 	
@@ -153,6 +154,12 @@ if array_length(collected_colors) >= 4
 {
 	collected_colors = []
 	color_count = 0
+}
+
+// check for end game
+if blocks_cleared == 16
+{
+	room_goto_next()
 }
 
 
