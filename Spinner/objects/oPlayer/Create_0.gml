@@ -1,4 +1,4 @@
-window_set_size(960, 540)
+window_set_size(1280, 720)
 
 colors = ["red", "blue", "yellow", "green"]
 global.color_order = array_shuffle(colors)
